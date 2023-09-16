@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>诗歌</title>
+		<link rel="stylesheet" href="./css/music.css">
+	</head>
+	<body>
+		<div class="card one">
+			<div class="left">
+				<div class="content">
+					<span class="writer">杜耒&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宋</span>
+					<h1 class="title">寒夜</h1>
+					<p>
+						寒夜客来茶当酒<br>
+						竹炉汤沸火初红<br>
+						寻常一样窗前月<br>
+						才有梅花便不同</p>
+					<span class="jieqi">大寒</span>
+				</div>
+			</div>
+			<div class="right">
+				<img src="./img/冬至.jpg" alt="" class="img">
+			</div>
+		</div>
+		<div class="card two">
+			<div class="left">
+				<img src="./img/春分.jpg" alt="" class="img">
+			</div>
+			<div class="right">
+				<div class="content">
+					<span class="writer">朱熹
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宋</span>
+					<h1 class="title">春日</h1>
+					<p>
+						胜日寻芳泗水滨<br>
+						无边光景一时新<br>
+						等闲识得东风面<br>
+						万紫千红总是春</p>
+					<span class="jieqi">立春</span>
+				</div>
+			</div>
+		</div>
+		<div class="card three">
+			<div class="left">
+				<div class="content">
+					<span class="writer">元稹&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐</span>
+					<h1 class="title">咏廿四气诗</h1>
+					<p>
+						琴弹南吕调，风色已高清<br>
+						云散飘颻影，雷收振怒声<br>
+						乾坤能静肃，寒暑喜均平<br>
+						忽见新来雁，人心敢不惊</p>
+					<span class="jieqi">秋分</span>
+				</div>
+			</div>
+			<div class="right">
+				<img src="./img/秋分.jpg" alt="" class="img">
+			</div>
+		</div>
+		<div class="card four">
+			<div class="left">
+				<img src="./img/立夏.jpg" alt="" class="img">
+			</div>
+			<div class="right">
+				<div class="content">
+					<span class="writer">刘禹锡
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐</span>
+					<h1 class="title">竹枝词</h1>
+					<p>
+						杨柳青青江水平<br>
+
+						闻郎岸上踏歌声<br>
+
+						东边日出西边雨<br>
+
+						道是无晴却有晴</p>
+					<span class="jieqi">立夏</span>
+				</div>
+			</div>
+		</div>
+		<div class="card five">
+			<div class="left">
+				<div class="content">
+					<span class="writer">罗隐&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐</span>
+					<h1 class="title">京中正月七日立春</h1>
+					<p>
+						一二三四五六七<br>
+						万木生芽是今日<br>
+						远天归雁拂云飞<br>
+						近水游鱼迸冰出</p>
+					<span class="jieqi">立春</span>
+				</div>
+			</div>
+			<div class="right">
+				<img src="./img/立春.jpg" alt="" class="img">
+			</div>
+		</div>
+		<div class="card six">
+			<div class="left">
+				<img src="./img/立秋.jpg" alt="" class="img">
+			</div>
+			<div class="right">
+				<div class="content">
+					<span class="writer">刘翰
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宋</span>
+					<h1 class="title">立秋</h1>
+					<p>
+						乳鸦啼散玉屏空<br>
+						一枕新凉一扇风<br>
+						睡起秋声无觅处<br>
+						满阶梧桐月明中</p>
+					<span class="jieqi">立秋</span>
+				</div>
+			</div>
+		</div>
+		<div class="card seven">
+			<div class="left">
+				<div class="content">
+					<span class="writer">刘辰翁
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宋</span>
+					<h1 class="title">雨水时节</h1>
+					<p> 郊岭风追残雪去<br>
+						坳溪水送破冰来<br>
+						顽童指问云中雁<br>
+						这里山花那日开</p>
+					<span class="jieqi">雨水</span>
+				</div>
+			</div>
+			<div class="right">
+				<img src="./img/雨水.jpg" alt="" class="img">
+			</div>
+		</div>
+		<script src="./js/vanilla-tilt.js"></script>
+		<script>
+			VanillaTilt.init(document.querySelectorAll(".card"), {
+				max: 15,
+				speed: 3000
+			});
+			VanillaTilt.init(document.querySelectorAll(".content"), {
+				max: 5,
+				speed: 3000
+			});
+			// VanillaTilt.init(document.querySelectorAll(".card"));
+		</script>
+	</body>
+</html>

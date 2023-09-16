@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+/* 轮播图开始 */
+
+#slideshow {
+	width: 100%;
+	height: 100vh;
+	/* background: url('../img/背景.jpg'); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.slideshow {
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	position: relative;
+	/* border-radius: 10px; */
+}
+
+.swiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.swiper-slide {
+	/* width: 100%; */
+	cursor: pointer;
+	height: 100%;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* width: 1920px;
+	height: 1080px; */
+}
+
+.swiper-slide .textcontent {
+	width: 500px;
+	height: 200px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	padding: 20px;
+	position: absolute;
+	top: 65%;
+	left: 5%;
+	text-align: left;
+}
+
+.swiper-slide .textcontent h1 {}
+
+.swiper-slide .textcontent h2 {}
+
+.swiper-slide .textcontent p {}
+
+.swiper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.swiper-button-prev {
+	background: url('../img/滑动标签.png') no-repeat center/cover;
+	color: rgba(0, 0, 0, 0) !important;
+}
+
+.swiper-button-next {
+	background: url('../img/滑动标签.png') no-repeat center/cover;
+	transform: rotate(180deg);
+	color: rgba(0, 0, 0, 0) !important;
+}
+
+
+/* 轮播图结束 */

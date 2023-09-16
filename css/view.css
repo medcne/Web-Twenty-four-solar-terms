@@ -1,0 +1,61 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+html {
+	/* scroll-behavior: smooth; */
+}
+
+main {
+	height: 100vh;
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+#season {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+}
+
+.season {
+	flex: 1;
+	overflow: hidden;
+	height: 85%;
+	transition: 0.5s;
+	margin: 0 13px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	border: 6px solid #fff;
+	background-color: #fff;
+
+}
+
+.season>img {
+	width: 145%;
+	height: 85%;
+	object-fit: cover;
+	transition: all .5s;
+}
+
+.season>span {
+	font: 200 45px '优设标题黑';
+	height: 15%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.season:hover {
+	flex-basis: 20%;
+}
+
+.season:hover>img {
+	width: 100%;
+	height: 100%;
+}

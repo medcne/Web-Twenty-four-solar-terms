@@ -1,0 +1,187 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+#eat {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #2B2B2B;
+	position: relative;
+}
+
+.eat_span {
+	padding: 20px;
+	font-size: 50px;
+	font-weight: 600;
+	color: white;
+}
+
+.eat {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.eat_left {
+	width: 400px;
+	height: 600px;
+	background-color: #2B2B2B;
+	position: relative;
+}
+
+.eat_right {
+	width: 400px;
+	height: 600px;
+	position: relative;
+}
+
+.left_bg {
+	overflow: hidden;
+	border-radius: 30px;
+	box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.1);
+	transform-origin: bottom;
+	transition: all 1.5s;
+}
+
+.right_bg {
+	overflow: hidden;
+	border-radius: 30px;
+	box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.1);
+	transform-origin: right;
+	transition: all 1.5s;
+}
+
+.left_bg>img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.right_bg>img {
+	width: 100%;
+	height: 100%;
+}
+
+.left_role {
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	bottom: 0px;
+	transform-origin: bottom;
+	transition: 1.5s;
+}
+
+.right_role {
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	bottom: 0px;
+	transform-origin: right;
+	transition: 1.5s;
+}
+
+.left_role>img,
+.right_role>img {
+	width: 100%;
+	height: 100%;
+}
+
+.eat_left:hover .left_bg {
+	transform: perspective(1000px) rotateX(20deg) skewX(-20deg);
+}
+
+.eat_right:hover .right_bg {
+	transform: perspective(2500px) rotateY(20deg) skewY(1deg);
+}
+
+.eat_left:hover .left_role {
+	transform: scale(1.2);
+}
+
+.eat_right:hover .right_role {
+	transform: scale(1.2);
+}
+
+.left_content,
+.right_content {
+	position: absolute;
+	top: 200px;
+	left: calc(50% - 140px);
+	font-size: 35px;
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.eat_left:hover .left_content {
+	opacity: 1;
+	transform: translateY(-130px);
+}
+
+.eat_right:hover .right_content {
+	opacity: 1;
+	transform: translateY(-130px);
+}
+
+/* ===========[视差滚动开始]========== */
+.shell {
+	height: 100vh;
+	overflow-x: hidden;
+	perspective: 4px;
+}
+
+
+.shell::-webkit-scrollbar {
+	display: none;
+}
+
+.shell>div {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.image {
+	transform: translateZ(-1px) scale(1.3);
+	height: 100vh;
+	z-index: -1;
+	background-size: cover;
+}
+
+.text {
+	height: 30vh;
+	background-color: white;
+}
+
+.text>h1 {
+	color: black;
+	font-size: 40px;
+}
+
+.heading {
+	z-index: -1;
+	transform: translateY(-40vh) translateZ(1px);
+	color: white;
+
+}
+
+.heading>h1 {
+	font-size: 100px;
+}
+
+/* ===========[视差滚动结束]========== */

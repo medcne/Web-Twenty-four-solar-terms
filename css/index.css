@@ -1,0 +1,144 @@
+* {
+	padding: 0rem;
+	margin: 0rem;
+	text-decoration: none;
+	list-style: none;
+}
+
+/* icon引入开始 */
+@font-face {
+	font-family: "iconfont";
+	/* Project id 4026643 */
+	src: url('iconfont.woff2?t=1682002065873') format('woff2'),
+		url('iconfont.woff?t=1682002065873') format('woff'),
+		url('iconfont.ttf?t=1682002065873') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+}
+
+/* icon引入结束 */
+
+/* 侧边导航栏结束 */
+#shell {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 999;
+}
+
+.shell {
+	position: relative;
+	width: 60px;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #FCEEC8;
+	border-radius: 0 10px 10px 0px;
+	box-shadow: inset -2px -2px 6px -3px rgba(0, 0, 0, 0.6);
+	/*导航变宽时的过度时间*/
+	transition: .3s;
+
+
+
+
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	height: 15%;
+	width: 85%;
+	margin: 9px;
+	border-radius: 5px;
+	position: relative;
+	color: #A6735B;
+	transition: .4s;
+}
+
+.shell a span:nth-child(1) {
+	font-size: 27px;
+	position: absolute;
+	margin: 0px 0 0px 13px;
+	color: #A6735B;
+	transition: all .3s;
+}
+
+/*在导航第一个和第五个选项下加横线*/
+.box:nth-child(2)::before,
+.box:nth-child(8)::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #A6735B;
+	position: absolute;
+	bottom: -10px;
+}
+
+.box span:nth-child(2) {
+	position: relative;
+	/* top: 14px; */
+	left: 50px;
+	font-size: 20px;
+	/* 导航收缩下文字透明不显示 */
+	opacity: 0;
+	transition: all 0.1s;
+	font-weight: bold;
+}
+
+/*导航栏变宽*/
+.shell:hover {
+	width: 140px;
+}
+
+.box:hover {
+	/* background-color: rgb(36, 42, 53); */
+	color: #fff;
+}
+
+/*文字显现*/
+.shell:hover span {
+	opacity: 1;
+}
+
+.slide_bar {
+	display: block;
+	height: 58px;
+	width: 85%;
+	border-radius: 5px;
+	background-color: #6A3D26;
+	position: absolute;
+	top: 20px;
+	transition: .4s;
+}
+
+.active span {
+	color: #fff !important;
+}
+
+/* 侧边导航栏结束 */
+
+/* iframe跳转开始 */
+.iframediv {
+	width: 100%;
+	height: 100vh;
+	/* margin: 0px auto; */
+	border: none;
+	/* overflow: hidden; */
+}
+
+.iframediv iframe {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform-origin: top left;
+	transform: scale(1)
+}
+
+/* iframe跳转结束 */

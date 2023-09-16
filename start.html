@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="./css/swiper.css">
+		<link rel="stylesheet" href="./css/start.css">
+
+	</head>
+	<body>
+		<!-- 轮播图开始 -->
+		<div id="slideshow">
+			<div class="slideshow">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./img/春.jpg" alt="">
+							<div class="textcontent" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+								<h1 data-swiper-parallax="-300" data-swiper-parallax-duration="800">春风十里，不如你</h1>
+								<h2 data-swiper-parallax="-300" data-swiper-parallax-duration="1000">遇见你，是我最美的春天</h2>
+								<p data-swiper-parallax="-300" data-swiper-parallax-duration="1100">
+									春天来了，万物复苏，花儿开放，鸟儿歌唱。你是我心中的春风，吹散了寒冬的阴霾，带来了温暖和希望。你是我眼中的春花，绽放了最美的笑容，让我沉醉在你的芬芳。你是我耳边的春鸟，唱出了最动听的歌声，让我陶醉在你的旋律。
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/夏.jpg" alt="">
+							<div class="textcontent" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+								<h1 data-swiper-parallax="-300" data-swiper-parallax-duration="800"> 夏日清凉，与你同行</h1>
+								<h2 data-swiper-parallax="-300" data-swiper-parallax-duration="1000">一起享受夏日的乐趣吧 </h2>
+								<p data-swiper-parallax="-300" data-swiper-parallax-duration="1100">
+									夏天来了，阳光明媚，海水碧蓝，冰淇淋甜蜜。你是我身边的清凉，给我一把遮阳伞，一杯冰镇饮料，一份清爽心情。你是我心中的同行，陪我去海边玩耍，去山林探险，去城市闯荡。你是我生活的乐趣，和我分享你的故事，你的梦想，你的快乐。
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/秋.jpg" alt="">
+							<div class="textcontent" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+								<h1 data-swiper-parallax="-300" data-swiper-parallax-duration="800">秋意浓浓，爱意更浓</h1>
+								<h2 data-swiper-parallax="-300" data-swiper-parallax-duration="1000">在这个收获的季节，让我们收获爱情吧
+								</h2>
+								<p data-swiper-parallax="-300" data-swiper-parallax-duration="1100">
+									秋天来了，枫叶红了，果实熟了，月亮圆了。你是我眼里的枫叶，染红了我的视线，温暖了我的心房，点亮了我的灵魂。你是我手中的果实，满足了我的味蕾，充实了我的胃口，甜蜜了我的生活。你是我心上的月亮，照亮了我的夜空，陪伴了我的寂寞，温柔了我的情怀。
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/冬.jpg" alt="">
+							<div class="textcontent" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+								<h1 data-swiper-parallax="-300" data-swiper-parallax-duration="800">冬日暖阳，只为你而来</h1>
+								<h2 data-swiper-parallax="-300" data-swiper-parallax-duration="1000">有你在身边，冬天也不冷 </h2>
+								<p data-swiper-parallax="-300" data-swiper-parallax-duration="1100">
+									冬天来了，雪花飘飘，火炉噼啪，毛衣柔软。你是我身上的暖阳，驱走了寒风的刺骨，给我一丝温暖和力量。你是我面前的火炉，燃烧着热情和激情，给我一份安全和依靠。你是我怀里的毛衣，包裹着柔情和细腻，给我一种舒适和幸福。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图结束 -->
+
+
+		<script src="./js/swiper.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+
+				slidesPerView: 1,
+				spaceBetween: 0,
+				loop: true,
+				parallax: true,
+				autoplay: {
+					delay: 2000,
+					stopOnLastSlide: false,
+					disableOnInteraction: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+	</body>
+</html>
